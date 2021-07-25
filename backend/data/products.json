@@ -1,0 +1,323 @@
+[
+    {
+        "name": "Gochujang Chicken Wings",
+        "price": "15.00",
+        "description": "10 sweet, salty, spicy, crispy, and messy wings covered with gochujang, sweet BBQ, and sesame seeds served with a side of blue cheese or ranch.",
+        "ratings": 5,
+        "images": [{
+            "public_id": "test",
+            "url": "nah"
+        }],
+        "category": "Small Plates",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Half Order Gochujang Wings",
+        "price": "8.50",
+        "description": "Six sweet, salty, spicy, crispy, and messy wings covered with gochujang, sweet BBQ, and sesame seeds served with a side of blue cheese or ranch.",
+        "ratings": 5,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Small Plates",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Everything Bagel Edamame",
+        "price": "4.50",
+        "description": "Lightly steamed and covered in everything bagel seasoning.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Small Plates",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Boneless Gochujang Wings",
+        "price": "14.00",
+        "description": "A pound of sweet, salty, crispy, and messy boneless wings covered with a house made gochujang sauce. Served with a side of blue cheese or ranch.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Small Plates",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegetable Spring Rolls",
+        "price": "6.50",
+        "description": "Three hefty spring rolls filled with a blend of mixed veggies and wrapped in a thin spring roll and deep fried until golden brown, served with a sweet chili sauce.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Small Plates",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Miso Ramen",
+        "price": "14.00",
+        "description": "Chicken and pork broth, blend of 4 types of miso, chicken katsu, soy egg, menma, green onions, corn, roasted sesame seeds and a pad of butter.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Tan Tan Ramen",
+        "price": "14.00",
+        "description": "Chicken and pork broth, browned and seasoned ground pork, sesame paste, ginger, chili oil, green onions, bean sprouts and garlic.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Kimchi Ramen",
+        "price": "15.00",
+        "description": "Spicy Chicken and Pork broth, miso, gochujang, kimchi, roasted sesame seeds, soy egg, soy tofu, corn, chashu, green onion and some heat.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Shoyu Ramen",
+        "price": "13.00",
+        "description": "Clear chicken broth, blend of premium soy sauces and umami packed bonito, chasu, menma, wood ear mushrooms, green onions, roasted sesame seeds and soy egg.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegan Kimchi Ramen",
+        "price": "15.00",
+        "description": "Vegan. Spicy. Vegetable broth, miso, gochujang, vegan kimchi, soy tofu, corn, menma, roasted sesame seeds, and some heat.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegan Tan Tan Ramen",
+        "price": "14.00",
+        "description": "Vegan. Thick vegetable broth, fried tofu, sesame paste, ginger, chive oil, green onions, roasted sesame seeds and garlic.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegetarian Miso Ramen",
+        "price": "14.00",
+        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Katsu Loco Moco",
+        "price": "14.00",
+        "description": "White rice, chicken katsu, brown gravy and a fried egg all playing on a traditional Hawaiian staple.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Rice Dishes",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Ground Pork Rice Bowl",
+        "price": "12.50",
+        "description": "White rice, ground pork, kimchi, green onions and bean sprouts with a special sauce.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Rice Dishes",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegetarian Miso Ramen",
+        "price": "14.00",
+        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegetarian Miso Ramen",
+        "price": "14.00",
+        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegetarian Miso Ramen",
+        "price": "14.00",
+        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegetarian Miso Ramen",
+        "price": "14.00",
+        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    },
+    {
+        "name": "Vegetarian Miso Ramen",
+        "price": "14.00",
+        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "ratings": 3,
+        "images": [
+            {
+                "public_id": "test",
+                "url": "nah"
+            }
+        ],
+        "category": "Veggie Ramen",
+        "seller": "Mike",
+        "stock": 3,
+        "numOfReviews": 1,
+        "reviews": []
+    }
+]
