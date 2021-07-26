@@ -236,9 +236,9 @@
         "reviews": []
     },
     {
-        "name": "Vegetarian Miso Ramen",
-        "price": "14.00",
-        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "name": "Fried Tofu Rice Bowl",
+        "price": "12.50",
+        "description": "White rice, fried tofu, vegan kimchi, corn, green onions and bean sprouts with a special vegan sauce.",
         "ratings": 3,
         "images": [
             {
@@ -246,16 +246,16 @@
                 "url": "nah"
             }
         ],
-        "category": "Veggie Ramen",
+        "category": "Rice Dishes",
         "seller": "Mike",
         "stock": 3,
         "numOfReviews": 1,
         "reviews": []
     },
     {
-        "name": "Vegetarian Miso Ramen",
-        "price": "14.00",
-        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "name": "Pork Belly Rice Bowl",
+        "price": "13.00",
+        "description": "White rice, thick cut pork belly, corn, bean sprouts, kimchi, and green onion drizzled with a special sweet and savory sauce.",
         "ratings": 3,
         "images": [
             {
@@ -263,16 +263,16 @@
                 "url": "nah"
             }
         ],
-        "category": "Veggie Ramen",
+        "category": "Rice Dishes",
         "seller": "Mike",
         "stock": 3,
         "numOfReviews": 1,
         "reviews": []
     },
     {
-        "name": "Vegetarian Miso Ramen",
-        "price": "14.00",
-        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "name": "Chocolate Cake",
+        "price": "7.50",
+        "description": "A deliciously moist fudge cake with a rich chocolate fudge icing and chocolate crunch coating around the sides.",
         "ratings": 3,
         "images": [
             {
@@ -280,16 +280,16 @@
                 "url": "nah"
             }
         ],
-        "category": "Veggie Ramen",
+        "category": "Desserts",
         "seller": "Mike",
         "stock": 3,
         "numOfReviews": 1,
         "reviews": []
     },
     {
-        "name": "Vegetarian Miso Ramen",
-        "price": "14.00",
-        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "name": "Fried Cheesecake",
+        "price": "7.00",
+        "description": "Basically a cheesecake burrito fried, covered in powdered sugar and served with a side of your choice of dessert sauce.",
         "ratings": 3,
         "images": [
             {
@@ -297,16 +297,16 @@
                 "url": "nah"
             }
         ],
-        "category": "Veggie Ramen",
+        "category": "Desserts",
         "seller": "Mike",
         "stock": 3,
         "numOfReviews": 1,
         "reviews": []
     },
     {
-        "name": "Vegetarian Miso Ramen",
-        "price": "14.00",
-        "description": "Vegetarian. Thick vegetable broth, blend of 4 types of miso, soy egg, fried tofu, menma, green onions, roasted sesame seeds, corn and a pad of butter.",
+        "name": "Chocolate Brownie",
+        "price": "5.00",
+        "description": "Super rich and thick, and Drizzled with Chocolate syrup. It's hard not to eat all of these ourselves!",
         "ratings": 3,
         "images": [
             {
@@ -314,7 +314,7 @@
                 "url": "nah"
             }
         ],
-        "category": "Veggie Ramen",
+        "category": "Desserts",
         "seller": "Mike",
         "stock": 3,
         "numOfReviews": 1,
