@@ -5,6 +5,8 @@ const errorMiddleware = require('./middlewares/errors')
 
 app.use(express.json());
 
+
+
 // Import all routes
 const products = require('./routes/product');
 
