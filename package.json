@@ -1,12 +1,12 @@
 {
   "name": "capstone_project",
   "version": "1.0.0",
-  "description": "A restaurant website and ecommerce sit using mern",
+  "description": "A restaurant website and ecommerce site using mern",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js ",
-    "dev": "set NODE_ENV=DEVELOPMENT& nodemon backend/server",
-    "prod": "set NODE_ENV=PRODUCTION& nodemon backend/server",
+    "dev": "NODE_ENV=DEVELOPMENT nodemon backend/server",
+    "prod": "NODE_ENV=PRODUCTION nodemon backend/server",
     "seeder": "node backend/utils/seeder.js"
   },
   "author": "Matt Clark",
