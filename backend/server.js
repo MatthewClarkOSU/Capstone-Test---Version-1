@@ -1,6 +1,9 @@
 const app = require('./app')
 const connectDatabase = require('./config/database')
 
+var cors = require('cors')
+
+app.use(cors())
 
 const dotenv = require('dotenv');
 

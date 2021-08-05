@@ -49,7 +49,7 @@ export const register = (userData) => async (dispatch) => {
             }
         }
 
-        const { data } = await axios.post('/api/v1/register', userData, config)
+        const { data } = await axios.post('http://127.0.0.1:4000/api/v1/register', userData, config)
 
         dispatch({
             type: REGISTER_USER_SUCCESS,
@@ -57,6 +57,7 @@ export const register = (userData) => async (dispatch) => {
         })
 
     } catch (error) {
+        console.log(error)
         dispatch({
             type: REGISTER_USER_FAIL,
             payload: error.response.data.message

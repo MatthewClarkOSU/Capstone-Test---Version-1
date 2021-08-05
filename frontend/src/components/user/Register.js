@@ -38,17 +38,23 @@ const Register = ({ history }) => {
     const submitHandler = (e) => {
         e.preventDefault();
 
-        const formData = new FormData();
-        formData.set('name', name);
-        formData.set('email', email);
-        formData.set('password', password);
-        console.log(formData)
+        const formData = {
+            'name': e.target.name.value,
+            'email': e.target.email.value,
+            'password': e.target.password.value};
+        // formData.set('name', name);
+        // formData.set('email', email);
+        // formData.set('password', password);
+        console.log(name)
+        // console.log(formData.getAll())
         dispatch(register(formData))
+        // console.log(formData.getAll())
     }
 
 
     const onChange = e => {
         setUser({ ...user, [e.target.name]: e.target.value })
+        console.log(user)
     }
 
     return (
@@ -96,32 +102,6 @@ const Register = ({ history }) => {
                                 onChange={onChange}
                             />
                         </div>
-
-                        {/* <div className='form-group'>
-                            <label htmlFor='avatar_upload'>Avatar</label>
-                            <div className='d-flex align-items-center'>
-                                <div>
-                                    <figure className='avatar mr-3 item-rtl'>
-                                        <img
-                                            src=""
-                                            className='rounded-circle'
-                                            alt='image'
-                                        />
-                                    </figure>
-                                </div>
-                                <div className='custom-file'>
-                                    <input
-                                        type='file'
-                                        name='avatar'
-                                        className='custom-file-input'
-                                        id='customFile'
-                                    />
-                                    <label className='custom-file-label' htmlFor='customFile'>
-                                        Choose Avatar
-                                    </label>
-                                </div>
-                            </div>
-                        </div> */}
 
                         <button
                             id="register_button"

@@ -13,15 +13,10 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
 
     const { name, email, password } = req.body;
 
-
     const user = await User.create({
         name,
         email,
-        password,
-        avatar: {
-            public_id: 'Bob',
-            url: 'https://tvline.com/wp-content/uploads/2020/11/bob-burgers-episode-200-video.jpg'
-        }
+        password
     })
 
     sendToken(user, 200, res)
