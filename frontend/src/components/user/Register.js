@@ -48,6 +48,7 @@ const Register = ({ history }) => {
 
 
     const onChange = e => {
+        console.log(user)
         setUser({ ...user, [e.target.name]: e.target.value })
     }
 
@@ -97,7 +98,7 @@ const Register = ({ history }) => {
                             />
                         </div>
 
-                        {/* <div className='form-group'>
+                        <div className='form-group'>
                             <label htmlFor='avatar_upload'>Avatar</label>
                             <div className='d-flex align-items-center'>
                                 <div>
@@ -121,7 +122,7 @@ const Register = ({ history }) => {
                                     </label>
                                 </div>
                             </div>
-                        </div> */}
+                        </div>
 
                         <button
                             id="register_button"
