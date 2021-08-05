@@ -11,10 +11,13 @@ const Register = ({ history }) => {
     const [user, setUser] = useState({
         name: '',
         email: '',
-        password: ''
+        password: '',
     })
 
     const { name, email, password } = user;
+
+    const [avatar, setAvatar] = useState('')
+    const [avatarPreview, setAvatarPreview] = useState('/images/spongebob.png')
 
     const alert = useAlert();
 
@@ -42,14 +45,31 @@ const Register = ({ history }) => {
         formData.set('name', name);
         formData.set('email', email);
         formData.set('password', password);
-        console.log(formData)
+        formData.set('avatar', avatar)
+
         dispatch(register(formData))
     }
 
 
     const onChange = e => {
-        console.log(user)
-        setUser({ ...user, [e.target.name]: e.target.value })
+        if(e.target.name === 'avatar') {
+
+            const reader = new FileReader();
+
+            reader.onload = () => {
+                if(reader.readyState === 2) {
+                    setAvatarPreview(reader.result)
+                    setAvatar(reader.result)
+                }
+            }
+
+            reader.readAsDataURL(e.target.files[0])
+
+        } else {
+
+            setUser({ ...user, [e.target.name]: e.target.value })
+
+        }
     }
 
     return (
@@ -104,9 +124,9 @@ const Register = ({ history }) => {
                                 <div>
                                     <figure className='avatar mr-3 item-rtl'>
                                         <img
-                                            src=""
+                                            src={avatarPreview}
                                             className='rounded-circle'
-                                            alt='image'
+                                            alt='Avatar Preview'
                                         />
                                     </figure>
                                 </div>
@@ -116,6 +136,8 @@ const Register = ({ history }) => {
                                         name='avatar'
                                         className='custom-file-input'
                                         id='customFile'
+                                        accept="images/*"
+                                        onChange={onChange}
                                     />
                                     <label className='custom-file-label' htmlFor='customFile'>
                                         Choose Avatar
