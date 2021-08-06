@@ -5,13 +5,17 @@ import MetaData from '../layouts/MetaData'
 
 import { useAlert } from 'react-alert'
 import { useDispatch, useSelector } from 'react-redux'
-import { addItemToCart } from '../../actions/cartActions'
+import { addItemToCart, removeItemFromCart } from '../../actions/cartActions'
 
 const Cart = () => {
 
     const dispatch = useDispatch();
 
     const { cartItems } = useSelector(state => state.cart)
+
+    const removeCartItemHandler = (id) => {
+        dispatch(removeItemFromCart(id))
+    }
 
     const increaseQty = (id, quantity, stock) => {
         const newQty = quantity + 1;
@@ -45,7 +49,7 @@ const Cart = () => {
                                 <Fragment>
                                     <hr />
 
-                                    <div className="cart-item">
+                                    <div className="cart-item" key={item.product}>
                                         <div className="row">
                                             <div className="col-4 col-lg-3">
                                                 <img src={item.image} alt="Laptop" height="90" width="115" />
@@ -70,7 +74,7 @@ const Cart = () => {
                                             </div>
 
                                             <div className="col-4 col-lg-1 mt-4 mt-lg-0">
-                                                <i id="delete_cart_item" className="fa fa-trash btn btn-danger"></i>
+                                                <i id="delete_cart_item" className="fa fa-trash btn btn-danger" onClick={() => removeCartItemHandler(item.product)}></i>
                                             </div>
 
                                         </div>
@@ -86,8 +90,8 @@ const Cart = () => {
                                 <div id="order_summary">
                                     <h4>Order Summary</h4>
                                     <hr />
-                                    <p>Subtotal:  <span className="order-summary-values">3 (Units)</span></p>
-                                    <p>Est. total: <span className="order-summary-values">$765.56</span></p>
+                                    <p>Subtotal:  <span className="order-summary-values">{cartItems.reduce((acc, item) => (acc + Number(item.quantity)), 0)} items</span></p>
+                                <p>Est. total: <span className="order-summary-values">${cartItems.reduce((acc, item) => acc + item.quantity * item.price, 0).toFixed(2)}</span></p>
 
                                     <hr />
                                     <button id="checkout_btn" className="btn btn-primary btn-block">Check out</button>
