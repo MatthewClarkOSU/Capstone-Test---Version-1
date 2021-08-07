@@ -21,26 +21,10 @@ const Header = () => {
 
     return (
         <Fragment>
-            <nav className="navbar row">
+            <nav className="navbar navbar-light row">
                 <div className="col-12 col-md-3">
-                    <div className="navbar-brand">
-                        <img src="." />
-                    </div>
-                </div>
-
-                <div className="col-12 col-md-6 mt-2 mt-md-0">
-                    <div className="input-group">
-                        <input
-                            type="text"
-                            id="search_field"
-                            className="form-control"
-                            placeholder="Enter Product Name ..."
-                        />
-                        <div className="input-group-append">
-                            <button id="search_btn" className="btn">
-                                <i className="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </div>
+                    <div className="navbar-brand mt-2">
+                        <p>Menu</p>
                     </div>
                 </div>
 
@@ -63,7 +47,7 @@ const Header = () => {
                                     className="rounded-circle"
                                     />
                                 </figure>
-                                <span>{user && user.name}</span>
+                                <span id="user-name-header">{user && user.name}</span>
                             </Link>
 
                             <div className="dropdown-menu" aria-labelledby="dropDownMenuButton">

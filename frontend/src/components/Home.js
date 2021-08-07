@@ -15,7 +15,7 @@ const Home = () => {
     const dispatch = useDispatch();
 
     const { loading, products, error, productsCount } = useSelector(state => state.products)
-
+    console.log(products)
     useEffect(() => {
         if (error) {
             return alert.error(error)
@@ -31,7 +31,9 @@ const Home = () => {
             {loading ? <Loader /> : (
                 <Fragment>
                 <MetaData title={'Shop for food!'} />
-                <h1 id="products_heading">Latest Products</h1>
+                <h1 id="products_heading">Spaceman's Ramen & Desserts</h1>
+                <h6>22 Moon St, The Moon</h6>
+                <h6>Open 24/7</h6>
 
                 <section id="products" className="container mt-5">
                     <div className="row">
