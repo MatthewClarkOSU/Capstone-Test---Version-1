@@ -59,7 +59,7 @@ const ProductDetails = ({ match }) => {
                 <MetaData title={product.name} />
             <div className="row f-flex justify-content-around">
                 <div className="col-12 col-lg-5 img-fluid" id="product_image">
-                    <Carousel pause='hover'>
+                    <Carousel>
                         {product.images && product.images.map(image => (
                             <Carousel.Item key={image.public_id}>
                                 <img className="d-block w-100" src={image.url} alt={product.title}/>
@@ -76,11 +76,11 @@ const ProductDetails = ({ match }) => {
 
                     <p id="product_price">${product.price}</p>
                     <div className="stockCounter d-inline">
-                        <span className="btn btn-danger minus" onClick={decreaseQty}>-</span>
+                                <span className="btn btn-outline-danger minus" onClick={decreaseQty}>-</span>
 
                         <input type="number" className="form-control count d-inline" value={quantity} readOnly />
 
-                                <span className="btn btn-primary plus" onClick={increaseQty}>+</span>
+                                <span className="btn btn-outline-success plus" onClick={increaseQty}>+</span>
                     </div>
                     <button type="button" id="cart_btn" className="btn btn-primary d-inline ml-4" disabled={product.stock === 0} onClick={addToCart} >Add to Cart</button>
 

@@ -65,15 +65,15 @@ const Cart = ({ history }) => {
 
 
                                             <div className="col-4 col-lg-2 mt-4 mt-lg-0">
-                                                <p id="card_item_price">${item.price}</p>
+                                                <p id="card_item_price">${(item.price).toFixed(2)}</p>
                                             </div>
 
                                             <div className="col-4 col-lg-3 mt-4 mt-lg-0">
                                                 <div className="stockCounter d-inline">
-                                                    <span className="btn btn-danger minus" onClick={ () => decreaseQty(item.product, item.quantity)}>-</span>
+                                                    <span className="btn btn-outline-danger minus" onClick={ () => decreaseQty(item.product, item.quantity)}>-</span>
                                                     <input type="number" className="form-control count d-inline" value={item.quantity} readOnly />
 
-                                                    <span className="btn btn-primary plus" onClick={ () => increaseQty(item.product, item.quantity, item.stock)}>+</span>
+                                                    <span className="btn btn-outline-success plus" onClick={ () => increaseQty(item.product, item.quantity, item.stock)}>+</span>
                                                 </div>
                                             </div>
 
