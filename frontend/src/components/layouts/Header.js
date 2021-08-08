@@ -23,8 +23,8 @@ const Header = () => {
         <Fragment>
             <nav className="navbar navbar-light row">
                 <div className="col-12 col-md-3">
-                    <div className="navbar-brand mt-2">
-                        <p>Menu</p>
+                    <div className="navbar-brand ml-4">
+                        <Link to="/"><span>Menu</span></Link>
                     </div>
                 </div>
 

@@ -13,11 +13,11 @@ const Product = ({ product }) => {
                     <h5 className="card-title">
                         <Link to={`/product/${product._id}`}>{product.name}</Link>
                     </h5>
-                    <div className="ratings ">
+                    {/* <div className="ratings ">
                         <span id="no_of_reviews">{product.description}</span>
-                    </div> 
-                    <p className="card-text">${product.price}</p>
-                    <Link to={`/product/${product._id}`} id="view_btn" className="btn btn-block">View Details</Link>
+                    </div>  */}
+                    <p className="card-text mt-auto ">${(product.price).toFixed(2)}</p>
+                    <Link to={`/product/${product._id}`} id="view_btn" className="btn btn-block mt-auto">View Item</Link>
                 </div>
             </div>
         </div>

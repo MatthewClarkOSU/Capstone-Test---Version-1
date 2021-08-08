@@ -58,7 +58,7 @@ const ConfirmOrder = ({ history }) => {
 
 
                                     <div className="col-4 col-lg-4 mt-4 mt-lg-0">
-                                        <p>{item.quantity} x ${item.price} = <b>${item.quantity * item.price}</b></p>
+                                        <p>{item.quantity} x ${(item.price).toFixed(2)} = <b>${(item.quantity * item.price).toFixed(2)}</b></p>
                                     </div>
 
                                 </div>
@@ -74,7 +74,7 @@ const ConfirmOrder = ({ history }) => {
                         <div id="order_summary">
                             <h4>Order Summary</h4>
                             <hr />
-                            <p>Subtotal:  <span className="order-summary-values">${itemsPrice}</span></p>
+                            <p>Subtotal:  <span className="order-summary-values">${(itemsPrice).toFixed(2)}</span></p>
                             <p>Tax:  <span className="order-summary-values">${taxPrice}</span></p>
 
                             <hr />
