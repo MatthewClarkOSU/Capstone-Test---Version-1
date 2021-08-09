@@ -4,23 +4,23 @@ const orderSchema = mongoose.Schema({
     shippingInfo: {
         address: {
             type: String,
-            required: true
+            required: false
         },
         city: {
             type: String,
-            required: true
+            required: false
         },
         phoneNumber: {
             type: String,
-            required: true
+            required: false
         },
         postalCode: {
             type: String,
-            required: true
+            required: false
         },
         country: {
             type: String,
-            required: true
+            required: false
         }
     },
     user: {
@@ -76,7 +76,7 @@ const orderSchema = mongoose.Schema({
     },
     shippingPrice: {
         type: Number,
-        required: true,
+        required: false,
         default: 0.0
     },
     totalPrice: {

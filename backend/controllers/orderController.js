@@ -4,24 +4,21 @@ const Product = require('../models/product');
 const ErrorHandler = require('../utils/errorHandler');
 const catchAsynceErrors = require('../middlewares/catchAsyncErrors');
 
-// Create a new order -> /api/v1/order/new
+// Create a new order -> /api/v1/order/new  - deleting shippingInfo and shippingPrice from here
 exports.newOrder = catchAsynceErrors( async (req, res, next) => {
     const {
         orderItems,
-        shippingInfo,
         itemsPrice,
         taxPrice,
-        shippingPrice,
         totalPrice,
         paymentInfo
     } = req.body;
 
+    // deleting shippingInfo and shippingPrice from here
     const order = await Order.create({
         orderItems,
-        shippingInfo,
         itemsPrice,
         taxPrice,
-        shippingPrice,
         totalPrice,
         paymentInfo,
         paidAt: Date.now(),
