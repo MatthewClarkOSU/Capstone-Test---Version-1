@@ -30,7 +30,7 @@ const Home = () => {
         <Fragment>
             {loading ? <Loader /> : (
                 <Fragment>
-                <MetaData title={'Shop for food!'} />
+                <MetaData title={'Spaceman\'s Ramen and Desserts'} />
                 <h1 id="products_heading">Spaceman's Ramen & Desserts</h1>
                 <h6>22 Moon St, The Moon</h6>
                 <h6>Open 24/7</h6>
