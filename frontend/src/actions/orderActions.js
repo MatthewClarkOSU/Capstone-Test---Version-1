@@ -7,6 +7,9 @@ import {
     MY_ORDERS_REQUEST,
     MY_ORDERS_SUCCESS,
     MY_ORDERS_FAIL,
+    ALL_ORDERS_REQUEST,
+    ALL_ORDERS_SUCCESS,
+    ALL_ORDERS_FAIL,
     CLEAR_ERRORS
 } from '../constants/orderConstants'
 
@@ -52,6 +55,27 @@ export const myOrders = () => async (dispatch) => {
     } catch (error) {
         dispatch({
             type: MY_ORDERS_FAIL,
+            payload: error.response.data.message
+        })
+    }
+}
+
+// Get all orders (Admin)
+export const allOrders = () => async (dispatch) => {
+    try {
+
+        dispatch({ type: ALL_ORDERS_REQUEST });
+
+        const { data } = await axios.get(`/api/v1/admin/orders`)
+
+        dispatch({
+            type: ALL_ORDERS_SUCCESS,
+            payload: data
+        })
+
+    } catch (error) {
+        dispatch({
+            type: ALL_ORDERS_FAIL,
             payload: error.response.data.message
         })
     }
