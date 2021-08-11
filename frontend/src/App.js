@@ -61,7 +61,7 @@ function App() {
     getStripeApiKey();
   }, [])
 
-  const { user, loading } = useSelector(state => state.auth)
+  const { user, isAuthenticated, loading } = useSelector(state => state.auth)
 
   return (
     <Router>
@@ -101,7 +101,7 @@ function App() {
 
         
 
-        {!loading && user.role !== 'admin' && (
+        {!loading && (!isAuthenticated || user.role !== 'admin') && (
           <Footer />
         )}
         
