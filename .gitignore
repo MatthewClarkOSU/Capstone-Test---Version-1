@@ -2,11 +2,12 @@
 /node_modules/
 /frontend/node_modules/
 
-# production
+# production /////// 
 /frontend/build
 
 # misc
-.env
+.virtualenv
+*.env
 /backend/config/config.env
 .DS_Store
 /frontend/.env.local
