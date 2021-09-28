@@ -1,4 +1,4 @@
-# Spaceman-Ramen-and-Desserts
+# Spacemans-Ramen-and-Desserts
 MERN stack ecommerce app
 
 ## Description
